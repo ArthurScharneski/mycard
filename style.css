@@ -315,6 +315,6 @@ body {
         fill: transparent;
     }
     to {
-        fill: rgba(0, 0, 0, 0.827);
+        fill: rgb(0, 0, 0);
     }
 }
