@@ -1,83 +1,35 @@
-/* viewBox="0 0 89 18"  */
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    width: 98vw;
-    height: 98vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#container {
-    position: relative;
-    height: 80vh;
-    width: 70vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* border: 1px solid blue; */
-}
-
-@media (orientation: landscape) {
+@media (orientation: portrait) {
     #background {
+        position: relative;
         width: 100vw;
         height: 100vh;
         margin: 0 auto;
-        background-image: url(images/Background.png);
+        background-image: url(images/Background90deg.png);
         background-size: contain;
     }
     #piano {
-        /* border: 1px solid red; */
+        width: 100vw;
+        height: 65vh;
         position: absolute;
-        height: inherit;
-        width: 60%;
-        background-image: url(images/Piano.png);
+        background-image: url(images/Piano90deg.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: left;
+        /* border: 1px solid blue; */
     }
     #logo {
-        /* border: 1px solid cornflowerblue; */
-        position: absolute;
-        width: 80%;
-        height: 15%;
-        right: 1%;
-        /* border: 1px solid; */
-        /* transform: translate(-70%, 0); */
-    }
-    #info {
-        position: absolute;
-        top: 18%;
-        left: 50%;
-        font-size: 1.2em;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-style: italic;
-        color: rgb(15, 14, 14);
-        text-shadow: 2px 2px 2px rgb(255, 255, 255);
-        /* border: 1px solid green; */
-    }
-    ul {
-        position: absolute;
-        bottom: 40%;
-        right: 0;
-        border: 1px solid yellow;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    li {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    #logo-rotate {
         display: none;
     }
-    #logo path:nth-child(1) {
+    #logo-rotate {
+        /* fill: black; */
+        /* border: 1px solid red; */
+        width: 20vw;
+        height: 65vh;
+        position: absolute;
+        right: 2%;
+        bottom: 1%;
+        animation: fill-line 10s ease forwards 3s;
+    }
+    #logo-rotate path:nth-child(1) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: rgb(0, 0, 0);
@@ -85,7 +37,7 @@ body {
         stroke-dashoffset: 283px;
         animation: line-anim 10s ease forwards;
     }
-    #logo path:nth-child(2) {
+    #logo-rotate path:nth-child(2) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -93,7 +45,7 @@ body {
         stroke-dashoffset: 101px;
         animation: line-anim 5s ease forwards 3s;
     }
-    #logo path:nth-child(3) {
+    #logo-rotate path:nth-child(3) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -101,7 +53,7 @@ body {
         stroke-dashoffset: 134px;
         animation: line-anim 5s ease forwards 3.3s;
     }
-    #logo path:nth-child(4) {
+    #logo-rotate path:nth-child(4) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -109,7 +61,7 @@ body {
         stroke-dashoffset: 214px;
         animation: line-anim 5s ease forwards 3.6s;
     }
-    #logo path:nth-child(5) {
+    #logo-rotate path:nth-child(5) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -117,7 +69,7 @@ body {
         stroke-dashoffset: 126px;
         animation: line-anim 5s ease forwards 3.9s;
     }
-    #logo path:nth-child(6) {
+    #logo-rotate path:nth-child(6) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -125,7 +77,7 @@ body {
         stroke-dashoffset: 101px;
         animation: line-anim 5s ease forwards 4.2s;
     }
-    #logo path:nth-child(7) {
+    #logo-rotate path:nth-child(7) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: rgb(0, 0, 0);
@@ -133,7 +85,7 @@ body {
         stroke-dashoffset: 991px;
         animation: line-anim 16s ease forwards;
     }
-    #logo path:nth-child(8) {
+    #logo-rotate path:nth-child(8) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -141,7 +93,7 @@ body {
         stroke-dashoffset: 87px;
         animation: line-anim 5s ease forwards 4.5s;
     }
-    #logo path:nth-child(9) {
+    #logo-rotate path:nth-child(9) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -149,7 +101,7 @@ body {
         stroke-dashoffset: 214px;
         animation: line-anim 5s ease forwards 4.8s;
     }
-    #logo path:nth-child(10) {
+    #logo-rotate path:nth-child(10) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -157,7 +109,7 @@ body {
         stroke-dashoffset: 144px;
         animation: line-anim 5s ease forwards 5.1s;
     }
-    #logo path:nth-child(11) {
+    #logo-rotate path:nth-child(11) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -165,7 +117,7 @@ body {
         stroke-dashoffset: 101px;
         animation: line-anim 5s ease forwards 5.4s;
     }
-    #logo path:nth-child(12) {
+    #logo-rotate path:nth-child(12) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -173,7 +125,7 @@ body {
         stroke-dashoffset: 152px;
         animation: line-anim 5s ease forwards 5.7s;
     }
-    #logo path:nth-child(13) {
+    #logo-rotate path:nth-child(13) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -181,7 +133,7 @@ body {
         stroke-dashoffset: 97px;
         animation: line-anim 5s ease forwards 6s;
     }
-    #logo path:nth-child(14) {
+    #logo-rotate path:nth-child(14) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -189,7 +141,7 @@ body {
         stroke-dashoffset: 120px;
         animation: line-anim 5s ease forwards 6.3s;
     }
-    #logo path:nth-child(15) {
+    #logo-rotate path:nth-child(15) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -197,7 +149,7 @@ body {
         stroke-dashoffset: 229px;
         animation: line-anim 5s ease forwards 6.6s;
     }
-    #logo path:nth-child(16) {
+    #logo-rotate path:nth-child(16) {
         fill: transparent;
         stroke-width: 0.1px;
         stroke: black;
@@ -206,22 +158,3 @@ body {
         animation: line-anim 5s ease forwards 6.9s;
     }
 }
-
-@keyframes line-anim {
-    to {
-        stroke-dashoffset: 0px;
-        fill: black;
-    }
-}
-
-@keyframes fill-line {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: rgb(0, 0, 0);
-    }
-}
-
-
-/* ------------------- Logo Rotate ------------------- */

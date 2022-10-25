@@ -1,8 +1,8 @@
-/* let letters = document.querySelectorAll("#logo path"); */
-/* for (let i = 0; i < letters.length; i++) {
+let letters = document.querySelectorAll("#logo path");
+for (let i = 0; i < letters.length; i++) {
     console.log(`i[${i + 1}] ${letters[i].getTotalLength()}`);
 
-} */
+}
 
 /* console.log(`Width:${innerWidth}\nHeight:${innerHeight}`); */
 /* let piano = document.querySelector("#piano"); */

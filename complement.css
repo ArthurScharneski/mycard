@@ -1,0 +1,62 @@
+/* #networks {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    height: 50%;
+    width: 36%;
+    border: 1px solid rgb(0, 0, 0);
+} */
+
+#networks {
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    height: 70%;
+    width: 35%;
+    /* border: 1px solid red; */
+}
+
+#whatsapp,
+#instagram,
+#facebook,
+#youtube {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 20%;
+    /* border: 1px solid rgb(193, 56, 154); */
+}
+
+#whatsapp img,
+#instagram img,
+#facebook img,
+#youtube img {
+    height: 50%;
+    margin-right: 10px;
+}
+
+#whatsapp span,
+#instagram a,
+#facebook a,
+#youtube a {
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#facebook a {
+    color: rgb(22, 96, 206);
+}
+
+#whatsapp span {
+    /* border: 1px solid blue; */
+    color: rgb(143, 239, 143);
+}
+
+#instagram a {
+    color: rgb(100, 23, 117);
+}
+
+#youtube a {
+    color: rgb(224, 12, 12);
+}
