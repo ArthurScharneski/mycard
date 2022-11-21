@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(202, 179, 134), rgba(185, 135, 40, 0.842));
+    background: url(images/Background.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-portrait {
+    display: none;
+}
+
+.container-landscape {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-landscape {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-landscape {
+    width: 100%;
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: lightgreen; */
+}
+
+.title-landscape svg {
+    width: 100%;
+    height: 100%;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 0.3px;
+    /* fill: rgb(255, 255, 255); */
+}
+
+.piano-landscape {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* border: 3px solid red; */
+}
+
+.icons-landscape {
+    width: 40%;
+    height: 100%;
+    /* border: 10px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.piano-landscape img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

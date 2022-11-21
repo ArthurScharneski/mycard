@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(202, 179, 134), rgba(185, 135, 40, 0.842));
+    background: url(images/Background.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-landscape {
+    display: none;
+}
+
+.container-portrait {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid rgb(0, 0, 0); */
+}
+
+.card-portrait {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(0, 128, 0, 0.59); */
+}
+
+.title-portrait {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.piano-portrait {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  border: 2px solid red; */
+}
+
+.icons-portrait {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    /* border: 2px solid orange; */
+    gap: 1rem;
+}
+
+.icon-portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+}
+
+.piano-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-portrait svg {
+    width: 66%;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 0.3px;
+    /* fill: rgb(255, 255, 255); */
+}
