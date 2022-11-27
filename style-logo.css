@@ -1,11 +1,10 @@
-.card-title {
-    fill: black;
-    /* animation: title-fill 1s ease forwards;
-    animation-delay: 5s; */
-    /* border: 1px solid red; */
+svg {
+    fill: transparent;
+    animation: title-fill 1s ease-in-out forwards;
+    animation-delay: 5s;
 }
 
-#txt-01 {
+.txt-01 {
     text-anchor: middle;
     font-size: 4rem;
     letter-spacing: .5rem;
@@ -13,18 +12,18 @@
     stroke-dashoffset: 2200px;
     stroke: rgb(0, 0, 0);
     stroke-width: 1px;
-    /* animation: title-anim 10s ease-in-out forwards; */
+    animation: title-anim 10s ease-in-out forwards;
 }
 
-#txt-02 {
+.txt-02 {
     text-anchor: middle;
-    font-size: 4rem;
-    letter-spacing: .5rem;
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
     stroke-dasharray: 2200px;
     stroke-dashoffset: 2200px;
     stroke: rgb(0, 0, 0);
     stroke-width: 1px;
-    /* animation: title-anim 10s ease-in-out forwards; */
+    animation: title-anim 10s ease-in-out forwards;
 }
 
 @keyframes title-anim {
@@ -38,6 +37,6 @@
         fill: transparent;
     }
     to {
-        fill: rgb(0, 0, 0);
+        fill: rgb(0, 0, 0)
     }
 }
