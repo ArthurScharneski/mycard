@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    border: 1px solid rgb(5, 5, 6);
+    /* margin: 200px 0 0 100px; */
+}
+
+text {
+    font-size: 3rem;
+    fill: rgb(197, 22, 183);
+    stroke: black;
+    text-anchor: middle;
+    letter-spacing: .5rem;
+}
