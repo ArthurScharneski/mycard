@@ -4,6 +4,11 @@
     src: url(fonts/Ballet-Regular-VariableFont_opsz.ttf);
 }
 
+@font-face {
+    font-family: myFont-secondary;
+    src: url(fonts/MeriendaOne-Regular.ttf);
+}
+
 :root {
     --color-bg-01: linear-gradient(to right, #EC6F66, #F3A183);
     --color-bg-02: linear-gradient(to right, #ED4264, #FFEDBC);
@@ -17,7 +22,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: myFont;
 }
 
 body {
@@ -77,6 +81,12 @@ body {
 }
 
 .icon {
+    font-family: myfont-secondary;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(9, 7, 5);
+    /* text-shadow: 0px 0px 2px rgb(100, 54, 4); */
+    margin: .3rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -87,12 +97,11 @@ body {
 }
 
 .icon a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    font-size: 1.1rem;
+    font-family: myfont-secondary;
+    font-size: 1.2rem;
     text-decoration: none;
     color: rgb(9, 7, 5);
-    text-shadow: 1px 1px 1px rgb(221, 218, 218);
+    /* text-shadow: 0px 0px 2px rgb(100, 54, 4); */
     margin: .5rem;
 }
 

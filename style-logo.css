@@ -1,6 +1,7 @@
 svg {
-    fill: transparent;
-    animation: title-fill 1s ease-in-out forwards;
+    font-family: myFont;
+    fill: black;
+    animation: title-fill 2s ease-out forwards;
     animation-delay: 5s;
 }
 
@@ -26,9 +27,11 @@ svg {
     animation: title-anim 10s ease-in-out forwards;
 }
 
-@keyframes title-anim {
+
+/* @keyframes title-anim {
     to {
         stroke-dashoffset: 0;
+        stroke-width: 0px;
     }
 }
 
@@ -37,6 +40,6 @@ svg {
         fill: transparent;
     }
     to {
-        fill: rgb(0, 0, 0)
+        fill: rgb(0, 0, 0);
     }
-}
+} */
