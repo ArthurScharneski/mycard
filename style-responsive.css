@@ -20,35 +20,37 @@
     }
     .main-container {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .container-piano {
         width: 90%;
-        height: 70%;
-        margin-top: 6rem;
+        height: 60%;
+        /* margin-top: 2rem; */
         /* background-color: lightblue; */
     }
     .container-piano img {
         object-position: center;
     }
     .container-icons {
-        width: 100%;
-        height: 50%;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         /* background-color: rgb(230, 191, 173); */
     }
     .icon {
-        flex-direction: column;
-        justify-content: center;
+        /* display: inline-block; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
     .icon img {
-        /* width: max(5%, 30px); */
-        width: 3.5rem;
+        width: 25%;
     }
-    .icon a {
-        font-size: 1rem;
+    .icon span {
+        font-size: .7rem;
     }
 }
